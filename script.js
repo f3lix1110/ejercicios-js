@@ -1,3 +1,4 @@
+/*
 //Declaracion de Funcion
 function Saludar(){
     alert("Hola a todos")
@@ -50,3 +51,46 @@ function Operaciones (num1, num2, num3, suma, resta, multi){
 }
 
 Operaciones(3,4,5);
+
+//Function Prompter
+function Prompter(){
+    var respuesta = prompt("Buenos dias, cual es tu nombre?");
+    alert("Es un gusto saludarte "+respuesta);
+}
+
+Prompter();
+
+function AreaCuadrado(){
+    var datoingresado = prompt("Ingresa un numero");
+    var resultado = datoingresado * datoingresado;
+    alert("El area del cuadrado es "+ resultado+" porque el numero ingresado fue: "+datoingresado);
+}
+AreaCuadrado();*/
+
+
+function confirmacion(){
+    var pregunta = confirm("Deseas visitar google.com?");
+    if (pregunta){
+        alert("Te enviare rapidamente");
+        window.location = "https://www.google.com";
+    } else{
+        alert("No hay problema, nos vemos luego");
+    }
+}
+
+//getelementbyID
+
+function cambiarColor(nuevoColor){
+    var elem = document.getElementById("parrafo");
+    elem.style.color = nuevoColor;
+}
+
+function Accion (Tipo){
+    var elem = document.getElementById ("DivBotones");
+    if (Tipo == "Ocultar"){
+    elem.style.display = 'none';}
+    else{
+    elem.style.display = '';}
+}
+
+
